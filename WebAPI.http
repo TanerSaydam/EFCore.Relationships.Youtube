@@ -1,0 +1,19 @@
+POST https://localhost:7210/user-create
+Content-Type: application/json
+
+{
+  "firstName": "Taner",
+  "lastName": "Saydam",
+  "identityNumber": "11112233441",
+  "fullAddress": "Kayseri"
+}
+
+###
+
+GET https://localhost:7210/user-getall
+
+###
+GET https://localhost:7210/api/users/Getall?$filter=contains(FullName,'t')&$top=10
+
+###
+GET https://localhost:7210/user-seed-data
